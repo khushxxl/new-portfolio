@@ -1,9 +1,11 @@
 import { projectData } from '../data'
-import {} from '@heroicons/react/outline'
 
 const Projects = () => {
   return (
-    <div className="bg-[#03001E]  flex flex-col items-center justify-start ">
+    <div
+      id="projects"
+      className="bg-[#03001E]  flex flex-col items-center justify-start "
+    >
       <div>
         <p className="text-white  text-center xl:text-center tracking-wider font-bold text-5xl mt-24">
           Best Projects of Mine
@@ -11,7 +13,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 w-full  gap-x-20 gap-y-10 items-center place-items-center ">
           {projectData.map((data) => {
             return (
-              <div className="relative cursor-pointer max-w-md transition-all hover:scale-105 rounded-2xl">
+              <div className="relative cursor-pointer max-w-md transition-all xl:hover:scale-105 duration-150 rounded-2xl">
                 <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div>
                 <div className="bg-[#1E1535] relative text-white rounded-2xl p-2 flex flex-col items-center justify-center">
                   <p className="tracking-wide font-semibold text-lg">

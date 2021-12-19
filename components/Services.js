@@ -4,7 +4,10 @@ import { businessData } from '../data'
 
 const Services = () => {
   return (
-    <div className=" bg-[#03001E] flex flex-col justify-start items-center ">
+    <div
+      id="services"
+      className=" bg-[#03001E] flex flex-col justify-start items-center "
+    >
       <div>
         <p className="text-white text-center xl:text-left font-bold text-5xl mt-12">
           Let's Build Something Awesome 🚀
@@ -34,7 +37,7 @@ const Services = () => {
         <div className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end">
           {businessData.map((data) => {
             return (
-              <div className="relative cursor-pointer transition-all hover:scale-105">
+              <div className="relative cursor-pointer transition-all duration-150 xl:hover:scale-105">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 rounded-2xl blur "></div>
                 <div
                   key={data.id}

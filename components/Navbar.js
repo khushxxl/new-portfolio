@@ -1,27 +1,55 @@
 import { MenuIcon } from '@heroicons/react/solid'
+import { useState } from 'react'
+import Dropdown from './Dropdown'
 const Navbar = () => {
+  const [drop, setDrop] = useState(false)
   return (
-    <div className="h-[10vh] top-0  p-4 sticky w-full justify-between xl:justify-evenly flex items-center text-black bg-gray-50 ">
-      <div>
-        <p className="text-2xl font-bold cursor-pointer">
-          Khushaal Choithramani
-        </p>
+    <>
+      <div className="h-[10vh] top-0  p-4 sticky w-full justify-between xl:justify-evenly flex items-center text-black bg-gray-50 ">
+        <div>
+          <p className="text-2xl font-bold cursor-pointer">
+            <a href="#hero">Khushaal Choithramani</a>
+          </p>
+        </div>
+        <div className="hidden  xl:inline-flex ">
+          <ul className="flex space-x-10 font-semibold">
+            <a href="#services">
+              <li className="cursor-pointer">Services</li>
+            </a>
+            <a href="#exp">
+              <li className="cursor-pointer">Experience</li>
+            </a>
+            <a href="#projects">
+              <li className="cursor-pointer">Projects</li>
+            </a>
+            <a href="#about">
+              <li className="cursor-pointer">About</li>
+            </a>
+            <a href="#contact">
+              <li className="cursor-pointer">Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div className="hidden xl:inline-flex">
+          <p className="font-semibold text-sm cursor-pointer ">
+            <a href="#contact">Work together? </a>
+          </p>
+        </div>
+        <div className="xl:hidden">
+          <MenuIcon
+            className="h-8 w-8 text-black cursor-pointer "
+            onClick={() => {
+              if (drop == false) {
+                setDrop(true)
+              } else {
+                setDrop(false)
+              }
+            }}
+          />
+        </div>
       </div>
-      <div className="hidden  xl:inline-flex ">
-        <ul className="flex space-x-10 font-semibold">
-          <li>Services</li>
-          <li>Experience</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div className="hidden xl:inline-flex">
-        <p className="font-semibold text-sm ">Work together? </p>
-      </div>
-      <div className="xl:hidden">
-        <MenuIcon className="h-8 w-8 text-black " />
-      </div>
-    </div>
+      {drop && <Dropdown />}
+    </>
   )
 }
 

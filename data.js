@@ -106,3 +106,23 @@ export const workDone = [
     role: 'Web Developer',
   },
 ]
+
+export const about = [
+  {
+    title: 'Education',
+    desc: 'I am in my high school and like to study physics',
+  },
+  {
+    title: 'Profession',
+    desc: 'With studying I enjoy freelancing as a web and app developer',
+  },
+  {
+    title: 'Networking',
+    desc:
+      'I like to communicate and talk to new people everyday and make connections around the world',
+  },
+  {
+    title: 'Games',
+    desc: 'I like playing my playstation and relief some burnouts',
+  },
+]

@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import About from '../components/About'
+import Connect from '../components/Connect'
+import End from '../components/End'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
@@ -19,6 +22,9 @@ export default function Home() {
         <Services />
         <Testimonials />
         <Projects />
+        <About />
+        <Connect />
+        <End />
       </div>
     </div>
   )
