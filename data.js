@@ -3,9 +3,20 @@ import {
   DeviceMobileIcon,
   PencilAltIcon,
   ServerIcon,
-} from '@heroicons/react/solid'
+} from '@heroicons/react/outline'
 
 export const projectData = [
+  {
+    id: 1,
+    name: 'Full Stack Web3 Chat dApp ',
+    description:
+      'A full stack web3 chat app built using moralis and is fully functional ',
+    tech: 'Nextjs + Reactjs + Tailwind CSS +  API integration ',
+    image:
+      'https://user-images.githubusercontent.com/73185436/146677285-144517a6-7926-425f-9a03-028df194b7b5.png',
+    gitRepoLink: 'https://github.com/khushxxl/web3-chat-moralis',
+    deployedLink: 'https://web3-chat-moralis.vercel.app/',
+  },
   {
     id: 4,
     name: 'Full Stack E-Commerce mobile application ',
@@ -29,18 +40,7 @@ export const projectData = [
     gitRepoLink: 'https://github.com/khushxxl/instagram-nextjs',
     deployedLink: 'https://instagram-nextjs-khushxxl.vercel.app/',
   },
-  {
-    id: 1,
-    name: 'Watch Now',
-    description:
-      'A web app which curates trending and movies of different genres in one place',
-    tech: 'Nextjs + Reactjs + Tailwind CSS +  API integration ',
-    image:
-      'https://user-images.githubusercontent.com/73185436/144229495-5143e869-6b64-4374-ac21-30e09b1bf645.png',
-    gitRepoLink: 'https://github.com/khushxxl',
-    deployedLink:
-      'https://movie-streaming-nextjs-vercel2-5lwtsbqo5-khushxxl.vercel.app/',
-  },
+
   {
     id: '3',
     name: 'Quote Up',
@@ -58,17 +58,17 @@ export const businessData = [
   {
     id: 1,
     title: 'Web Development',
-    icon: `${(<DesktopComputerIcon />)}`,
+    icon: <DesktopComputerIcon className="h-5 w-5" />,
   },
   {
     id: 2,
     title: 'App Development',
-    icon: `${(<DeviceMobileIcon />)}`,
+    icon: <DeviceMobileIcon className="h-5 w-5" />,
   },
   {
     id: 3,
     title: 'Web & App Design',
-    icon: `${(<PencilAltIcon />)}`,
+    icon: <PencilAltIcon className="h-5 w-5" />,
   },
   //   {
   //     id: 4,
@@ -85,4 +85,24 @@ export const businessData = [
   //     title: 'Maintenance',
   //     image: require('./images/settings-2.png'),
   //   },
+]
+
+export const workDone = [
+  {
+    name: 'BETA TESTERS',
+    about: 'A agency as a startup helping people by providing various services',
+    role: 'Lead Mobile Developer',
+  },
+  {
+    name: 'BARB',
+    about:
+      'A startup building a mobile app for people to book saloon appointments across India.',
+    role: 'Lead Web Developer',
+  },
+  {
+    name: 'AFEN Marketplace',
+    about:
+      'A startup build NFT market place using WEB 3 , Solidity and Reactjs',
+    role: 'Web Developer',
+  },
 ]

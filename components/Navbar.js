@@ -3,7 +3,9 @@ const Navbar = () => {
   return (
     <div className="h-[10vh] top-0  p-4 sticky w-full justify-between xl:justify-evenly flex items-center text-black bg-gray-50 ">
       <div>
-        <p className="text-xl font-bold">Khushaal Choithramani</p>
+        <p className="text-2xl font-bold cursor-pointer">
+          Khushaal Choithramani
+        </p>
       </div>
       <div className="hidden  xl:inline-flex ">
         <ul className="flex space-x-10 font-semibold">

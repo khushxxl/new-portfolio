@@ -15,7 +15,7 @@ const Services = () => {
         {/* left div  */}
         <div className="mt-10 flex flex-col items-center xl:items-start justify-start  ">
           <div>
-            <p className="font-semibold text-center xl:text-left text-2xl text-gray-500">
+            <p className="font-semibold tracking-widest text-center xl:text-left text-2xl text-gray-500">
               My Services
             </p>
             <p className="text-5xl text-center xl:text-left max-w-lg mt-3 font-extrabold">
@@ -25,7 +25,7 @@ const Services = () => {
           <div>
             <img
               src="https://i.ibb.co/tbWf57K/img1.png"
-              className="h-[300px] w-[300px] shadow-2xl"
+              className="h-[300px] w-[300px] shadow-2xl "
             />
           </div>
         </div>
@@ -34,20 +34,23 @@ const Services = () => {
         <div className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end">
           {businessData.map((data) => {
             return (
-              <div
-                key={data.id}
-                className="bg-[#1E1535] space-y-4 max-w-sm   min-w-max p-4 rounded-lg"
-              >
-                <div className="flex items-center space-x-2 ">
-                  <DeviceMobileIcon className="h-6 w-6" />
-                  <p className="text-xl font-semibold tracking-wide">
-                    {data.title}
+              <div className="relative cursor-pointer transition-all hover:scale-105">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 rounded-2xl blur "></div>
+                <div
+                  key={data.id}
+                  className="bg-[#1E1535] relative space-y-4 max-w-sm   min-w-max p-4 rounded-lg"
+                >
+                  <div className="flex items-center space-x-2 ">
+                    <p className="h-5 w-5">{data.icon}</p>
+                    <p className="text-xl  font-semibold tracking-wide">
+                      {data.title}
+                    </p>
+                  </div>
+
+                  <p className="max-w-xs xl:max-w-sm mt-10">
+                    Ea rebum sea voluptua stet gubergren, no duo gubergren sea
                   </p>
                 </div>
-
-                <p className="max-w-xs xl:max-w-sm mt-10">
-                  Ea rebum sea voluptua stet gubergren, no duo gubergren sea
-                </p>
               </div>
             )
           })}
