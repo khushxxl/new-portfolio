@@ -4,8 +4,8 @@ import Dropdown from './Dropdown'
 const Navbar = () => {
   const [drop, setDrop] = useState(false)
   return (
-    <>
-      <div className="h-[10vh] top-0  p-4 sticky w-full justify-between xl:justify-evenly flex items-center text-black bg-gray-50 ">
+    <div className="flex flex-col z-50 top-0 sticky">
+      <div className="h-[10vh]  p-4  w-full justify-between xl:justify-evenly flex items-center text-black bg-gray-50 ">
         <div>
           <p className="text-2xl font-bold cursor-pointer">
             <a href="#hero">Khushaal Choithramani</a>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href="#about">
               <li className="cursor-pointer">About</li>
             </a>
-            <a href="#contact">
+            <a href="#contact ">
               <li className="cursor-pointer">Contact</li>
             </a>
           </ul>
@@ -48,8 +48,9 @@ const Navbar = () => {
           />
         </div>
       </div>
+
       {drop && <Dropdown />}
-    </>
+    </div>
   )
 }
 

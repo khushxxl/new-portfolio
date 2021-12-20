@@ -1,6 +1,6 @@
 const Dropdown = () => {
   return (
-    <div className="w-full xl:hidden ">
+    <div className="w-full xl:hidden  bg-white ">
       <ul className="flex pl-4 space-y-3 flex-col font-semibold">
         <a href="#services">
           <li className="cursor-pointer">Services</li>
@@ -15,7 +15,7 @@ const Dropdown = () => {
           <li className="cursor-pointer">About</li>
         </a>
         <a href="#contact">
-          <li className="cursor-pointer">Contact</li>
+          <li className="cursor-pointer mb-5">Contact</li>
         </a>
       </ul>
     </div>
