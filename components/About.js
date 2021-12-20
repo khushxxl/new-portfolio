@@ -36,15 +36,16 @@ const About = () => {
         </div>
       </div>
       <div>
-        <p className="text-center text-white text-4xl tracking-widest mt-10 font-bold mb-14">
+        <p className="text-center text-white text-4xl tracking-wide xl:tracking-widest mt-10 font-bold mb-14">
           Find it interesting ?
           <br />
           <a
             href="https://www.linkedin.com/in/khushaal-choithramani-250285208/"
             className="underline"
           >
-            Let's Connect ⚡️
+            Let's Connect
           </a>
+          ⚡️
         </p>
       </div>
     </div>
