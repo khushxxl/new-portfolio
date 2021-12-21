@@ -1,4 +1,5 @@
 import { projectData } from '../data'
+import Image from 'next/image'
 
 const Projects = () => {
   return (
@@ -20,10 +21,12 @@ const Projects = () => {
                     {data.name}
                   </p>
                   <a href={data.deployedLink}>
-                    <img
+                    <Image
                       src={data.image}
-                      alt=""
-                      className="h-[250px] w-[350px] mt-2 rounded-xl cursor-pointer"
+                      alt={`${data.name}'s image`}
+                      className="mt-2 rounded-xl cursor-pointer"
+                      height={250}
+                      width={370}
                     />
                   </a>
                   <div className="flex w-full justify-evenly px-3 my-3  font-semibold">

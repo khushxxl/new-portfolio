@@ -1,6 +1,7 @@
 import { img1 } from '../images/img1.png'
 import { DeviceMobileIcon } from '@heroicons/react/solid'
 import { businessData } from '../data'
+import Image from 'next/image'
 
 const Services = () => {
   return (
@@ -26,9 +27,12 @@ const Services = () => {
             </p>
           </div>
           <div>
-            <img
+            <Image
               src="https://i.ibb.co/tbWf57K/img1.png"
-              className="h-[300px] w-[300px] shadow-2xl "
+              className="shadow-2xl "
+              height={300}
+              width={300}
+              objectFit="cover"
             />
           </div>
         </div>
@@ -37,7 +41,10 @@ const Services = () => {
         <div className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end">
           {businessData.map((data) => {
             return (
-              <div className="relative cursor-pointer transition-all duration-150 xl:hover:scale-105">
+              <div
+                key={data.id}
+                className="relative cursor-pointer transition-all duration-150 xl:hover:scale-105"
+              >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 rounded-2xl blur "></div>
                 <div
                   key={data.id}

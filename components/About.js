@@ -1,4 +1,5 @@
 import { about } from '../data'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -27,11 +28,13 @@ const About = () => {
         </div>
 
         {/* Right  */}
-        <div>
-          <img
+        <div className="mt-10 xl:mt-0 xl:ml-20">
+          <Image
             src="https://i.ibb.co/DbGf44r/IMG-4477.png"
-            alt=""
-            className="h-[300px] w-[300px]"
+            alt="avatar-image"
+            height={290}
+            width={370}
+            objectFit="cover"
           />
         </div>
       </div>
