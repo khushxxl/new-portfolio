@@ -4,7 +4,7 @@ import Dropdown from './Dropdown'
 const Navbar = () => {
   const [drop, setDrop] = useState(false)
   return (
-    <div className="flex flex-col z-50 top-0 sticky">
+    <nav className="flex flex-col z-50 top-0 sticky">
       <div className="h-[10vh]  p-4  w-full justify-between xl:justify-evenly flex items-center text-black bg-gray-50 ">
         <div>
           <p className="text-2xl font-bold cursor-pointer">
@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
 
       {drop && <Dropdown />}
-    </div>
+    </nav>
   )
 }
 
