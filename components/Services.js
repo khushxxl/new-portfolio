@@ -57,9 +57,7 @@ const Services = () => {
                     </p>
                   </div>
 
-                  <p className="max-w-xs xl:max-w-sm mt-10">
-                    Ea rebum sea voluptua stet gubergren, no duo gubergren sea
-                  </p>
+                  <p className="max-w-xs xl:max-w-sm mt-10">{data.desc}</p>
                 </div>
               </div>
             )

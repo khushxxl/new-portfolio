@@ -59,16 +59,21 @@ export const businessData = [
     id: 1,
     title: 'Web Development',
     icon: <DesktopComputerIcon className="h-5 w-5" />,
+    desc:
+      'I can build the most beautiful and useful website for your business!',
   },
   {
     id: 2,
     title: 'App Development',
     icon: <DeviceMobileIcon className="h-5 w-5" />,
+    desc: 'Need an app ? , Problem solved , get your apps built in no time!',
   },
   {
     id: 3,
     title: 'Web & App Design',
     icon: <PencilAltIcon className="h-5 w-5" />,
+    desc:
+      'Struggling with the design? Let me design an architecture for your websites and apps!',
   },
   //   {
   //     id: 4,
@@ -110,7 +115,7 @@ export const workDone = [
 export const about = [
   {
     title: 'Education',
-    desc: 'I am in my high school and like to study physics',
+    desc: 'I am in my high school and I like to study about space',
   },
   {
     title: 'Profession',
