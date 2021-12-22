@@ -1,6 +1,29 @@
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { businessData, workDone } from '../data'
 
 const Testimonials = () => {
+  const { ref, inView } = useInView({ threshold: 0 })
+
+  const animation = useAnimation()
+
+  useEffect(() => {
+    const unsubscribe = console.log('Div activity status for inView : ', inView)
+
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: { type: 'spring' },
+        opacity: 100,
+      })
+    }
+    if (!inView) {
+      animation.start({ x: 400 })
+    }
+
+    return unsubscribe
+  }, [inView])
   return (
     <div
       id="exp"
@@ -10,11 +33,14 @@ const Testimonials = () => {
         <p className="text-white  text-center xl:text-center font-bold text-5xl mt-12">
           Work Experience
         </p>
-        <div>
+        <div ref={ref}>
           <div className="flex flex-col items-center mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
             {workDone.map((data) => {
               return (
-                <div className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105">
+                <motion.div
+                  animate={animation}
+                  className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105"
+                >
                   <div className="absolute -inset-0.5  bg-gradient-to-r from-yellow-300 to-yellow-800 rounded-2xl blur "></div>
                   <div
                     key={data.id}
@@ -29,7 +55,7 @@ const Testimonials = () => {
 
                     <p className="max-w-xs xl:max-w-sm mt-10">{data.about}</p>
                   </div>
-                </div>
+                </motion.div>
               )
             })}
           </div>

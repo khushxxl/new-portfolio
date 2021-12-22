@@ -2,8 +2,32 @@ import { img1 } from '../images/img1.png'
 import { DeviceMobileIcon } from '@heroicons/react/solid'
 import { businessData } from '../data'
 import Image from 'next/image'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 const Services = () => {
+  const { ref, inView } = useInView({ threshold: 0 })
+
+  const animation = useAnimation()
+
+  useEffect(() => {
+    const unsubscribe = console.log('Div activity status for inView : ', inView)
+
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: { type: 'tween', bounce: 0.3 },
+        opacity: 100,
+      })
+    }
+    if (!inView) {
+      animation.start({ x: '30vw', opacity: 0 })
+    }
+
+    return unsubscribe
+  }, [inView])
+
   return (
     <div
       id="services"
@@ -36,14 +60,18 @@ const Services = () => {
             />
           </div>
         </div>
-
         {/* right div  */}
-        <div className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end">
+
+        <div
+          ref={ref}
+          className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end"
+        >
           {businessData.map((data) => {
             return (
-              <div
+              <motion.div
                 key={data.id}
                 className="relative cursor-pointer transition-all duration-150 xl:hover:scale-105"
+                animate={animation}
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 rounded-2xl blur "></div>
                 <div
@@ -59,7 +87,7 @@ const Services = () => {
 
                   <p className="max-w-xs xl:max-w-sm mt-10">{data.desc}</p>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
         </div>

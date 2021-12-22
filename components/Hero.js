@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 const Hero = () => {
   return (
@@ -22,16 +23,17 @@ const Hero = () => {
       </div>
       <div className="relative pb-5 mt-6">
         <div className="absolute -inset-0.5 bg-gradient-to-b  to-yellow-900 rounded-full blur "></div>
-
-        <Image
-          src="https://pbs.twimg.com/profile_images/1458835398319218703/oX3WAyP-_400x400.jpg"
-          alt="Profile image"
-          className="rounded-full border-4 border-white relative"
-          // layout="fill"
-          objectFit="cover"
-          height={200}
-          width={200}
-        />
+        <motion.div>
+          <Image
+            src="https://pbs.twimg.com/profile_images/1458835398319218703/oX3WAyP-_400x400.jpg"
+            alt="Profile image"
+            className="rounded-full border-4 border-white relative"
+            // layout="fill"
+            objectFit="cover"
+            height={200}
+            width={200}
+          />
+        </motion.div>
       </div>
 
       <div className="mt-10">

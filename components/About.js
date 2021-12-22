@@ -1,7 +1,30 @@
 import { about } from '../data'
 import Image from 'next/image'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 const About = () => {
+  const { ref, inView } = useInView({ threshold: 0 })
+
+  const animation = useAnimation()
+
+  useEffect(() => {
+    const unsubscribe = console.log('Div activity status for inView : ', inView)
+
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: { type: 'spring' },
+        opacity: 100,
+      })
+    }
+    if (!inView) {
+      animation.start({ x: -400 })
+    }
+
+    return unsubscribe
+  }, [inView])
   return (
     <div
       id="about"
@@ -39,7 +62,11 @@ const About = () => {
         </div>
       </div>
       <div>
-        <p className="text-center text-white text-4xl tracking-wide xl:tracking-widest mt-10 font-bold mb-14">
+        <motion.p
+          ref={ref}
+          animate={animation}
+          className="text-center text-white text-4xl tracking-wide xl:tracking-widest mt-10 font-bold mb-14"
+        >
           Find it interesting ?
           <br />
           <a
@@ -49,7 +76,7 @@ const About = () => {
             Let's Connect
           </a>
           ⚡️
-        </p>
+        </motion.p>
       </div>
     </div>
   )
