@@ -71,7 +71,6 @@ const Services = () => {
               <motion.div
                 key={data.id}
                 className="relative cursor-pointer transition-all duration-150 xl:hover:scale-105"
-                animate={animation}
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 rounded-2xl blur "></div>
                 <div

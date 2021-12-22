@@ -37,10 +37,7 @@ const Testimonials = () => {
           <div className="flex flex-col items-center mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
             {workDone.map((data) => {
               return (
-                <motion.div
-                  animate={animation}
-                  className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105"
-                >
+                <motion.div className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105">
                   <div className="absolute -inset-0.5  bg-gradient-to-r from-yellow-300 to-yellow-800 rounded-2xl blur "></div>
                   <div
                     key={data.id}

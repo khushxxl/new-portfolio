@@ -64,7 +64,6 @@ const About = () => {
       <div>
         <motion.p
           ref={ref}
-          animate={animation}
           className="text-center text-white text-4xl tracking-wide xl:tracking-widest mt-10 font-bold mb-14"
         >
           Find it interesting ?
