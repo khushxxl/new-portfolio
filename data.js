@@ -131,3 +131,64 @@ export const about = [
     desc: 'I like playing my playstation and relief some burnouts',
   },
 ]
+
+export const myApps = [
+  {
+    title: 'Full Stack Ecommerce App',
+    subtite: 'A android and ios mobile app for ordering goods online',
+    function:
+      'Buying item , admin panel , login , logout , registeration , shopping cart',
+    github: 'https://github.com/khushxxl/rn-ecom-app',
+  },
+  {
+    title: 'Quotes App',
+    subtite: 'A quote app that generates new quotes every time',
+    function: 'UI design, new quotes ,light/dark mode',
+    github: 'https://github.com/khushxxl/quote-up',
+  },
+  {
+    title: 'Instagram Clone',
+    subtite: 'A instagram clone (UI)',
+    function: 'iOS and Android',
+    github: 'https://github.com/khushxxl/instagram-rn-clone',
+  },
+  {
+    title: 'YouTube Clone',
+    subtite: 'A youtube clone (UI)',
+    function: 'iOS and Android',
+    github: 'https://github.com/khushxxl/youtube-rn-clone',
+  },
+]
+
+export const myWebsites = [
+  {
+    title: 'Web 3 Chat App',
+    subtite: 'A decentralised web application which people can chat in',
+    function:
+      'Metamask Login , Logout , Data fetching,Blockchain database, security',
+    github: 'https://github.com/khushxxl/web3-chat-moralis',
+    view: 'https://web3-chat-moralis.vercel.app/',
+  },
+  {
+    title: 'Full Stack Instagram Clone',
+    subtite: 'A full stack clone of instagram',
+    function: 'Authentication System, Login , Logout, Image Uploading ',
+    github: 'https://github.com/khushxxl/instagram-nextjs',
+    view: 'https://instagram-nextjs-three.vercel.app/',
+  },
+  {
+    title: 'Movie Streaming App',
+    subtite:
+      'A web app which curates all the latest movies as well as web shows across all the platform',
+    function: 'Hulu clone , Genre Selection, Responsive',
+    github: 'https://github.com/khushxxl/movie-streaming-nextjs-vercel',
+    view: 'https://movie-streaming-nextjs-vercel2.vercel.app/',
+  },
+  {
+    title: 'Airbnb Clone',
+    subtite: 'Clone of airbnb web application',
+    function: 'Landing Page, UI , Responsive',
+    github: 'https://github.com/khushxxl/airbnb-nextjs-project',
+    view: 'https://airbnb-nextjs-project-blond.vercel.app/',
+  },
+]
