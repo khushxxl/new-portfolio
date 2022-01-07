@@ -7,6 +7,27 @@ import {
 
 export const projectData = [
   {
+    name: 'WEB 3.0 dApp - KRYPT',
+    description:
+      'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
+    function: 'web3 , blockchain , transfer money , DeFi',
+    gitRepoLink: 'https://github.com/khushxxl/web3-eth-krypt-defi',
+    id: 333,
+    image:
+      'https://user-images.githubusercontent.com/73185436/148596618-7b08dbcf-459e-473d-a000-00d679a06d1f.png',
+  },
+  {
+    name: 'WEB 3.0 dApp - Lottery',
+    description:
+      'A decentralised blockchain based fun app to play lottery among players, and winner chosen would be unbiased!',
+    function: 'web3 , blockchain , transfer money , DeFi , Lottery , Pool',
+    gitRepoLink: 'https://github.com/khushxxl/lottery-web3-hardhat',
+    id: 333,
+    image:
+      'https://user-images.githubusercontent.com/73185436/148597027-f0be5d42-08e9-4a79-a916-5b3ff911111b.png',
+  },
+
+  {
     id: 1,
     name: 'Full Stack Web3 Chat dApp ',
     description:

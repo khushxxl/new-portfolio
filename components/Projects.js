@@ -1,5 +1,6 @@
 import { projectData } from '../data'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -8,7 +9,7 @@ const Projects = () => {
       className="bg-[#03001E]  flex flex-col items-center justify-start "
     >
       <div>
-        <p className="text-white  text-center xl:text-center tracking-wider font-bold text-5xl mt-24">
+        <p className="text-white  text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
           Best Projects of Mine
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 w-full  gap-x-20 gap-y-10 items-center place-items-center ">
@@ -33,9 +34,12 @@ const Projects = () => {
                     <a href={data.gitRepoLink}>
                       <p>View Code</p>
                     </a>
-                    <a href={data.deployedLink}>
-                      <p>Visit</p>
-                    </a>
+
+                    {data.deployedLink && (
+                      <a href={data.deployedLink}>
+                        <p>Visit</p>
+                      </a>
+                    )}
                   </div>
                   <div>
                     <p className="max-w-sm text-center p-4">
@@ -46,6 +50,13 @@ const Projects = () => {
               </div>
             )
           })}
+        </div>
+        <div className="mt-10">
+          <Link href="https://www.khushcodezz.com/my-apps">
+            <p className="text-5xl underline cursor-pointer tracking-widest font-bold text-pink-400 text-center">
+              Wanna See More?
+            </p>
+          </Link>
         </div>
       </div>
     </div>

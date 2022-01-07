@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 const Hero = () => {
   return (
     <div
@@ -46,6 +47,13 @@ const Hero = () => {
         <p className="mt-2 text-center text-white font-bold tracking-widest">
           Let's work together? {'>'}
         </p>
+      </div>
+      <div className="mt-3">
+        <a href="#projects">
+          <p className="text-2xl underline cursor-pointer tracking-wide font-bold text-blue-100 text-center">
+            Wanna See My Work?
+          </p>
+        </a>
       </div>
     </div>
   )
