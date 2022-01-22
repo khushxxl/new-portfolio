@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="bg-gradient-to-r from-blue-300  to-blue-900  h-screen w-full flex flex-col items-center justify-start "
+      className="bg-gradient-to-b from-blue-300  to-blue-900  h-screen w-full flex flex-col items-center justify-start "
     >
       <div className=" mt-20   min-w-max">
         {/* div 1  */}

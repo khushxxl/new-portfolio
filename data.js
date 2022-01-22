@@ -14,8 +14,18 @@ export const projectData = [
     gitRepoLink: 'https://github.com/khushxxl/krypt-nextjs',
     deployedLink: 'https://krypt-nextjs.vercel.app/',
     id: 333,
-    image:
-      'https://user-images.githubusercontent.com/73185436/148596618-7b08dbcf-459e-473d-a000-00d679a06d1f.png',
+    image: require('./images/kryptPortfolio.png'),
+  },
+  {
+    id: 2,
+    name: 'Full Stack Instagram Clone',
+    description:
+      'Full stack instagram clone with features like image uploading and full proof authentication! (Web) ',
+    tech:
+      'Nextjs , Reactjs , Recoiljs , Firebase Auth , Firebase Firestore , Tailwind CSS ',
+    image: require('./images/instaPortfolio.png'),
+    gitRepoLink: 'https://github.com/khushxxl/instagram-nextjs',
+    deployedLink: 'https://instagram-nextjs-khushxxl.vercel.app/',
   },
   {
     name: 'WEB 3.0 dApp - Lottery',
@@ -24,22 +34,8 @@ export const projectData = [
     function: 'web3 , blockchain , transfer money , DeFi , Lottery , Pool',
     gitRepoLink: 'https://github.com/khushxxl/lottery-web3-hardhat',
     id: 313,
-    image:
-      'https://user-images.githubusercontent.com/73185436/148597027-f0be5d42-08e9-4a79-a916-5b3ff911111b.png',
+    image: require('./images/lotteryPortfolio.png'),
     deployedLink: 'https://lottery-web3-hardhat5.vercel.app/',
-  },
-
-  {
-    id: 2,
-    name: 'Full Stack Instagram Clone',
-    description:
-      'Full stack instagram clone with features like image uploading and full proof authentication! (Web) ',
-    tech:
-      'Nextjs , Reactjs , Recoiljs , Firebase Auth , Firebase Firestore , Tailwind CSS ',
-    image:
-      'https://user-images.githubusercontent.com/73185436/144228318-61767ba7-2cab-4b96-8f22-69efa5344e6d.png',
-    gitRepoLink: 'https://github.com/khushxxl/instagram-nextjs',
-    deployedLink: 'https://instagram-nextjs-khushxxl.vercel.app/',
   },
 
   {
@@ -48,8 +44,7 @@ export const projectData = [
     description:
       'A full stack web3 chat app built using moralis and is fully functional ',
     tech: 'Nextjs + Reactjs + Tailwind CSS +  API integration ',
-    image:
-      'https://user-images.githubusercontent.com/73185436/146677285-144517a6-7926-425f-9a03-028df194b7b5.png',
+    image: require('./images/moralisPortfolio.png'),
     gitRepoLink: 'https://github.com/khushxxl/web3-chat-moralis',
     deployedLink: 'https://web3-chat-moralis.vercel.app/',
   },
@@ -59,8 +54,7 @@ export const projectData = [
     description:
       'A mobile app which allows users to order stuff online and sellers can view it through an admin panel (iOS & Android) ',
     tech: 'This web app has been built with Next.js and Tailwind CSS',
-    image:
-      'https://user-images.githubusercontent.com/73185436/144180437-3f95d3ab-c9c1-4ee9-a315-7fc2196fd493.png',
+    image: require('./images/ecomPortfolio.png'),
     gitRepoLink: 'https://github.com/khushxxl/rn-ecom-app',
     deployedLink: 'https://github.com/khushxxl/rn-ecom-app',
   },
@@ -71,8 +65,7 @@ export const projectData = [
     description:
       'This mobile application shows beautiful new quotes to influence and enrich people in right direction! (iOS & Android)',
     tech: 'React , React Native , API integration , Light & Dark mode support ',
-    image:
-      'https://user-images.githubusercontent.com/73185436/144181436-8b2e44d5-7b34-4419-9561-982260d3d8d4.png',
+    image: require('./images/quotePortfolio.png'),
     gitRepoLink: 'https://github.com/khushxxl/quote-up',
     deployedLink: 'https://github.com/khushxxl/quote-up',
   },
