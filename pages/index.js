@@ -5,6 +5,7 @@ import End from '../components/End'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
+import Review from '../components/Review'
 import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
 
@@ -30,6 +31,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Testimonials />
+        <Review />
         <Projects />
         <About />
         <Connect />

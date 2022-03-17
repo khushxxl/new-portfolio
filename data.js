@@ -231,3 +231,18 @@ export const myWebsites = [
     view: 'https://airbnb-nextjs-project-blond.vercel.app/',
   },
 ]
+
+export const testimonials = [
+  {
+    name: 'Vansh Chaudhary',
+    work: 'Worked on website for a startup',
+    text:
+      'It has been a really nice experience working with Khushaal. We have worked together as frontend developers for Barb and were able to put up the basic version of site in a short period of time. Khushaal has thorough knowledge of the latest frontend technologies (NextJS,ReactJS,TailwindCSS) and on top of that a great learning attitude. He has never missed a meeting and performed the given tasks with great efficiency.',
+  },
+  {
+    name: 'Samantha',
+    work: 'Built a NFT collection website',
+    text:
+      'Khushaal has helped Imbraze as a frontend developer. While I have had no previous contact working with Khushaal, he has shown to be very hard-working and determined to deliver the demands of our requests to the best of his abilities. He is both kind and communicative, always sending us updates with his progress and making the appropriate changes immediately after our feedback.',
+  },
+]

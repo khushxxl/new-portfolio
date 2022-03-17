@@ -12,12 +12,15 @@ const Navbar = () => {
           </p>
         </div>
         <div className="hidden  xl:inline-flex ">
-          <ul className="flex space-x-10 font-semibold">
+          <ul className="flex space-x-6 font-semibold">
             <a href="#services">
               <li className="cursor-pointer">Services</li>
             </a>
             <a href="#exp">
               <li className="cursor-pointer">Experience</li>
+            </a>
+            <a href="#testi">
+              <li className="cursor-pointer">Testimonials</li>
             </a>
             <a href="#projects">
               <li className="cursor-pointer">Projects</li>

@@ -17,7 +17,7 @@ const Projects = () => {
             return (
               <div className="relative cursor-pointer max-w-md transition-all xl:hover:scale-105 duration-150 rounded-2xl">
                 <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div>
-                <div className="bg-[#1E1535] relative text-white rounded-2xl p-2 flex flex-col items-center justify-center">
+                <div className="bg-[#1E1535] relative text-white rounded-xl p-2 flex flex-col items-center justify-center">
                   <p className="tracking-wide font-semibold text-lg">
                     {data.name}
                   </p>

@@ -8,6 +8,9 @@ const Dropdown = () => {
         <a href="#exp">
           <li className="cursor-pointer">Experience</li>
         </a>
+        <a href="#testi">
+          <li className="cursor-pointer">Testimonials</li>
+        </a>
         <a href="#projects">
           <li className="cursor-pointer">Projects</li>
         </a>
