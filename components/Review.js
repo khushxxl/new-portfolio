@@ -36,7 +36,7 @@ const Review = () => {
           Client Testimonials
         </p>
         <div ref={ref}>
-          <div className="flex flex-col items-start mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
+          <div className="flex flex-col items-center mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
             {testimonials.map((data) => {
               return (
                 <motion.div className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105 max-h-max">
