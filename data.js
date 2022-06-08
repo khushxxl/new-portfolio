@@ -7,7 +7,7 @@ import {
 
 export const projectData = [
   {
-    name: 'WEB 3.0 dApp - KRYPT',
+    name: 'Full Stack WEB 3.0 dApp - KRYPT',
     description:
       'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
     function: 'web3 , blockchain , transfer money , DeFi',
@@ -15,6 +15,16 @@ export const projectData = [
     deployedLink: 'https://krypt-nextjs.vercel.app/',
     id: 333,
     image: require('./images/kryptPortfolio.png'),
+  },
+  {
+    name: 'Full Stack WEB 3.0 dApp - Amazon Clone',
+    description:
+      'A decentralised blockchain based app to sell & buy products like amazon but on web 3',
+    function: 'web3 , blockchain , transfer money , DeFi',
+    gitRepoLink: 'https://github.com/khushxxl/amazon-frontend-clone',
+    deployedLink: 'https://amazon-frontend-clone.vercel.app',
+    id: 33256,
+    image: require('./images/amazonclone.png'),
   },
   {
     id: 2,
@@ -28,7 +38,7 @@ export const projectData = [
     deployedLink: 'https://instagram-nextjs-khushxxl.vercel.app/',
   },
   {
-    name: 'WEB 3.0 dApp - Lottery',
+    name: 'Full Stack WEB 3.0 dApp - Lottery',
     description:
       'A decentralised blockchain based fun app to play lottery among players, and winner chosen would be unbiased!',
     function: 'web3 , blockchain , transfer money , DeFi , Lottery , Pool',
@@ -47,6 +57,16 @@ export const projectData = [
     image: require('./images/moralisPortfolio.png'),
     gitRepoLink: 'https://github.com/khushxxl/web3-chat-moralis',
     deployedLink: 'https://web3-chat-moralis.vercel.app/',
+  },
+  {
+    id: 4,
+    name: 'NFT Trading app UI  ',
+    description:
+      'A mobile app which allows users to buy and sell NFTs online on an app (iOS & Android) ',
+    tech: 'This web app has been built with Next.js and Tailwind CSS',
+    image: require('./images/nftApp.png'),
+    gitRepoLink: 'https://github.com/khushxxl/rn-ecom-app',
+    deployedLink: 'https://github.com/khushxxl/rn-ecom-app',
   },
   {
     id: 4,
@@ -179,7 +199,7 @@ export const myApps = [
 
 export const myWebsites = [
   {
-    title: 'WEB 3.0 dApp - KRYPT',
+    title: 'Full Stacl WEB 3.0 dApp - KRYPT',
     subtitle:
       'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
     function: 'web3 , blockchain , transfer money , DeFi',
@@ -190,7 +210,7 @@ export const myWebsites = [
       'https://user-images.githubusercontent.com/73185436/148596618-7b08dbcf-459e-473d-a000-00d679a06d1f.png',
   },
   {
-    title: 'WEB 3.0 dApp - Lottery',
+    title: 'Full Stack WEB 3.0 dApp - Lottery',
     subtite:
       'A decentralised blockchain based fun app to play lottery among players, and winner chosen would be unbiased!',
     function: 'web3 , blockchain , transfer money , DeFi , Lottery , Pool',
