@@ -34,7 +34,7 @@ const Services = () => {
       className=" bg-[#03001E] flex flex-col justify-start items-center "
     >
       <div>
-        <p className="text-white text-center xl:text-left font-bold text-5xl mt-12">
+        <p className="text-white text-center xl:text-left tracking-wide font-bold text-5xl mt-12 font-style-2">
           Let's Build Something Awesome 🚀
         </p>
       </div>
@@ -79,7 +79,7 @@ const Services = () => {
                 >
                   <div className="flex items-center space-x-2 ">
                     <p className="h-5 w-5">{data.icon}</p>
-                    <p className="text-xl  font-semibold tracking-wide">
+                    <p className="text-xl font-custom-font-1  font-semibold tracking-wide">
                       {data.title}
                     </p>
                   </div>

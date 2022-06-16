@@ -5,7 +5,7 @@ const Connect = () => {
       className=" bg-purple-900 h-[70vh]  flex flex-col text-center justify-center items-center"
     >
       <div>
-        <p className="text-white text-[4rem] tracking-widest font-bold">
+        <p className="text-white text-[3rem] font-custom-font-1 font-bold">
           Let's Work Together!
         </p>
       </div>

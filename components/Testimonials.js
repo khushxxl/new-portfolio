@@ -30,8 +30,8 @@ const Testimonials = () => {
       className="bg-[#03001E] flex flex-col items-center justify-center "
     >
       <div className="shadow-xl">
-        <p className="text-white  text-center xl:text-center font-bold text-5xl mt-12">
-          Work Experience
+        <p className="text-white font-style-2 tracking-wider  text-center xl:text-center font-bold text-5xl mt-12">
+          Work Experience 💻
         </p>
         <div ref={ref}>
           <div className="flex flex-col items-center mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">

@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
 
       <div className="mt-10">
-        <p className="text-4xl tracking-[0.2rem] text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
+        <p className="text-4xl font-style-2 tracking-[0.2rem] text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
           Freelance App & Web Developer
         </p>
         <p className="text-center mt-2 text-2xl font-bold tracking-widest text-gray-300">

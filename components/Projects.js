@@ -9,8 +9,8 @@ const Projects = () => {
       className="bg-[#03001E]  flex flex-col items-center justify-start "
     >
       <div>
-        <p className="text-white  text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
-          Best Projects of Mine
+        <p className="text-white font-style-2   text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
+          Awesome Projects ✨
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 w-full  gap-x-20 gap-y-10 items-center place-items-center ">
           {projectData.map((data) => {
@@ -18,14 +18,14 @@ const Projects = () => {
               <div className="relative cursor-pointer max-w-md transition-all xl:hover:scale-105 duration-150 rounded-2xl">
                 <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div>
                 <div className="bg-[#1E1535] relative text-white rounded-xl p-2 flex flex-col items-center justify-center">
-                  <p className="tracking-wide font-semibold text-lg">
+                  <p className="tracking-widest font-custom-font-1 font-semibold text-xl mb-3">
                     {data.name}
                   </p>
                   <a href={data.deployedLink}>
                     <Image
                       src={data.image}
                       alt={`${data.name}'s image`}
-                      className="mt-2 rounded-xl cursor-pointer"
+                      className=" rounded-xl cursor-pointer"
                       height={250}
                       width={370}
                     />

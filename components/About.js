@@ -30,8 +30,8 @@ const About = () => {
       id="about"
       className="bg-[#03001E]   flex flex-col items-center justify-start"
     >
-      <p className="text-white  text-center xl:text-center tracking-wider font-bold text-5xl mt-24">
-        About Me
+      <p className="text-white font-style-2  text-center xl:text-center tracking-wider font-bold text-5xl mt-24">
+        About Me 🙇‍♂️
       </p>
       <div className="mt-10 flex flex-col xl:flex-row justify-between max-w-6xl w-full items-center xl:items-start">
         {/* Left  */}
@@ -39,7 +39,7 @@ const About = () => {
           {about.map((data) => {
             return (
               <div className="bg-[#1E1535] transition-all duration-150 xl:hover:border-2 xl:hover:border-white xl:hover:scale-105 space-x-5 p-5 rounded-xl flex flex-col items-center justify-center text-white">
-                <p className="text-2xl font-bold tracking-wider">
+                <p className="text-2xl font-bold tracking-wider font-custom-font-1">
                   {data.title}
                 </p>
                 <p className="text-center mt-2 text-gray-300 font-semibold text-lg">

@@ -7,7 +7,7 @@ import {
 
 export const projectData = [
   {
-    name: 'Full Stack WEB 3.0 dApp - KRYPT',
+    name: 'KRYPT WEB 3.0',
     description:
       'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
     function: 'web3 , blockchain , transfer money , DeFi',
@@ -17,7 +17,17 @@ export const projectData = [
     image: require('./images/kryptPortfolio.png'),
   },
   {
-    name: 'Full Stack WEB 3.0 dApp - Amazon Clone',
+    name: 'NFT MARKETPLACE WEB 3.0 ',
+    description:
+      'A decentralised blockchain based app to buy , sell , create and resell NFTs',
+    function: 'web3 , blockchain ,  , NFT',
+    gitRepoLink: 'https://github.com/khushxxl/opensea-clone',
+    deployedLink: 'https://opensea-clone-beta.vercel.app/',
+    id: 333,
+    image: require('./images/nftMarketplace.png'),
+  },
+  {
+    name: 'AMAZON WEB 3.0',
     description:
       'A decentralised blockchain based app to sell & buy products like amazon but on web 3',
     function: 'web3 , blockchain , transfer money , DeFi',
@@ -37,40 +47,10 @@ export const projectData = [
     gitRepoLink: 'https://github.com/khushxxl/instagram-nextjs',
     deployedLink: 'https://instagram-nextjs-khushxxl.vercel.app/',
   },
-  {
-    name: 'Full Stack WEB 3.0 dApp - Lottery',
-    description:
-      'A decentralised blockchain based fun app to play lottery among players, and winner chosen would be unbiased!',
-    function: 'web3 , blockchain , transfer money , DeFi , Lottery , Pool',
-    gitRepoLink: 'https://github.com/khushxxl/lottery-web3-hardhat',
-    id: 313,
-    image: require('./images/lotteryPortfolio.png'),
-    deployedLink: 'https://lottery-web3-hardhat5.vercel.app/',
-  },
 
   {
-    id: 1,
-    name: 'Full Stack Web3 Chat dApp ',
-    description:
-      'A full stack web3 chat app built using moralis and is fully functional ',
-    tech: 'Nextjs + Reactjs + Tailwind CSS +  API integration ',
-    image: require('./images/moralisPortfolio.png'),
-    gitRepoLink: 'https://github.com/khushxxl/web3-chat-moralis',
-    deployedLink: 'https://web3-chat-moralis.vercel.app/',
-  },
-  {
     id: 4,
-    name: 'NFT Trading app UI  ',
-    description:
-      'A mobile app which allows users to buy and sell NFTs online on an app (iOS & Android) ',
-    tech: 'This web app has been built with Next.js and Tailwind CSS',
-    image: require('./images/nftApp.png'),
-    gitRepoLink: 'https://github.com/khushxxl/rn-ecom-app',
-    deployedLink: 'https://github.com/khushxxl/rn-ecom-app',
-  },
-  {
-    id: 4,
-    name: 'Full Stack E-Commerce mobile application ',
+    name: 'Shopping App (Full Stack)',
     description:
       'A mobile app which allows users to order stuff online and sellers can view it through an admin panel (iOS & Android) ',
     tech: 'This web app has been built with Next.js and Tailwind CSS',
