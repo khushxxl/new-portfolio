@@ -1,6 +1,6 @@
 const Dropdown = () => {
   return (
-    <div className="w-full xl:hidden shadow-2xl md:hidden list-none flex  justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in ">
+    <div className="w-full xl:hidden shadow-2xl md:hidden list-none flex bg-white  justify-start items-end rounded-md  text-black animate-slide-in ">
       <ul className="flex pl-4 space-y-3 flex-col font-semibold">
         <a href="#services">
           <li className="cursor-pointer">Services</li>

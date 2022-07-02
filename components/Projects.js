@@ -1,10 +1,27 @@
 import { projectData } from '../data'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const Projects = () => {
+  const profileVarient = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0 },
+  }
+  const control = useAnimation()
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible')
+    } else {
+      control.start('hidden')
+    }
+  }, [control, inView])
   return (
-    <div
+    <motion.div
       id="projects"
       className="bg-[#03001E]  flex flex-col items-center justify-start "
     >
@@ -15,7 +32,12 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 w-full  gap-x-20 gap-y-10 items-center place-items-center ">
           {projectData.map((data) => {
             return (
-              <div className="relative cursor-pointer max-w-md transition-all xl:hover:scale-105 duration-150 rounded-2xl">
+              <motion.div
+                // variants={profileVarient}
+                // ref={ref}
+                // animate={control}
+                className="relative cursor-pointer max-w-md transition-all xl:hover:scale-105 duration-150 rounded-2xl"
+              >
                 <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div>
                 <div className="bg-[#1E1535] relative text-white rounded-xl p-2 flex flex-col items-center justify-center">
                   <p className="tracking-widest font-custom-font-1 font-semibold text-xl mb-3">
@@ -47,7 +69,7 @@ const Projects = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
         </div>
@@ -59,7 +81,7 @@ const Projects = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

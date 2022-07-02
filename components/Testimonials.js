@@ -4,26 +4,20 @@ import { useInView } from 'react-intersection-observer'
 import { businessData, workDone } from '../data'
 
 const Testimonials = () => {
-  const { ref, inView } = useInView({ threshold: 0 })
-
-  const animation = useAnimation()
+  const profileVarient = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0 },
+  }
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
-    const unsubscribe = console.log('Div activity status for inView : ', inView)
-
     if (inView) {
-      animation.start({
-        x: 0,
-        transition: { type: 'spring' },
-        opacity: 100,
-      })
+      control.start('visible')
+    } else {
+      control.start('hidden')
     }
-    if (!inView) {
-      animation.start({ x: 400 })
-    }
-
-    return unsubscribe
-  }, [inView])
+  }, [control, inView])
   return (
     <div
       id="exp"
@@ -34,17 +28,23 @@ const Testimonials = () => {
           Work Experience 💻
         </p>
         <div ref={ref}>
-          <div className="flex flex-col items-center mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
+          <div className="text-white grid  place-items-center place-content-center grid-cols-1 lg:grid-cols-2 lg:gap-x-20 gap-x-0 gap-y-10 mt-20">
             {workDone.map((data) => {
               return (
-                <motion.div className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105">
+                <motion.div
+                  transition={{ delay: 1 }}
+                  ref={ref}
+                  animate={control}
+                  variants={profileVarient}
+                  className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105"
+                >
                   <div className="absolute -inset-0.5  bg-gradient-to-r from-yellow-300 to-yellow-800 rounded-2xl blur "></div>
                   <div
                     key={data.id}
                     className="bg-[#1E1535] text-left relative space-y-4 max-w-sm    min-w-max p-4 rounded-lg"
                   >
                     <div className="flex items-start flex-col ">
-                      <p className="text-xl  font-semibold tracking-wide text-left">
+                      <p className="text-xl font-custom-font-1  font-semibold tracking-wide text-left">
                         {data.name}
                       </p>
                       <p className="text-gray-300">My Role: {data.role}</p>

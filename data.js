@@ -74,23 +74,23 @@ export const projectData = [
 export const businessData = [
   {
     id: 1,
-    title: 'Web Development',
+    title: 'NFT Development',
     icon: <DesktopComputerIcon className="h-5 w-5" />,
     desc:
-      'I can build the most beautiful and useful website for your business!',
+      'I can build & deploy NFTs and NFT marketplaces. Host on opensea or make a seperate marketplace',
   },
   {
     id: 2,
-    title: 'App Development',
+    title: 'Blockchain Development',
     icon: <DeviceMobileIcon className="h-5 w-5" />,
-    desc: 'Need an app ? , Problem solved , get your apps built in no time!',
+    desc: 'I can build web 3.0 dapps and deploy it on ethereum network.',
   },
   {
     id: 3,
-    title: 'Web & App Design',
+    title: 'Web & App Development',
     icon: <PencilAltIcon className="h-5 w-5" />,
     desc:
-      'Struggling with the design? Let me design an architecture for your websites and apps!',
+      'I can build websites and apps for you and host on the internet in no time! I can help in ranking websites on top too!',
   },
   //   {
   //     id: 4,
@@ -112,7 +112,8 @@ export const businessData = [
 export const workDone = [
   {
     name: 'BETA TESTERS',
-    about: 'A agency as a startup helping people by providing various services',
+    about:
+      'A agency as a startup helping people by providing various services.',
     role: 'Lead Mobile Developer',
   },
   {
@@ -124,8 +125,14 @@ export const workDone = [
   {
     name: 'AFEN Marketplace',
     about:
-      'A startup build NFT market place using WEB 3 , Solidity and Reactjs',
+      'A startup building NFT market place using WEB 3 , Solidity and Reactjs.',
     role: 'Web Developer',
+  },
+  {
+    name: 'Dreamers DAO',
+    about:
+      'A startup build NFT ART , deploying it and selling them online, build a gambling web 3.0 game.',
+    role: 'Web Developer and Research',
   },
 ]
 

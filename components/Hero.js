@@ -1,7 +1,25 @@
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useInView } from 'react-intersection-observer'
+import { useEffect, useState } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+
 const Hero = () => {
+  const profileVarient = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  }
+  const control = useAnimation()
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible')
+    } else {
+      control.start('hidden')
+    }
+  }, [control, inView])
+
   return (
     <div
       id="hero"
@@ -24,7 +42,12 @@ const Hero = () => {
       </div>
       <div className="relative pb-5 mt-6">
         <div className="absolute -inset-0.5 bg-gradient-to-b  to-yellow-900 rounded-full blur "></div>
-        <motion.div>
+        <motion.div
+          ref={ref}
+          animate={control}
+          initial="hidden"
+          variants={profileVarient}
+        >
           <Image
             src="https://pbs.twimg.com/profile_images/1458835398319218703/oX3WAyP-_400x400.jpg"
             alt="Profile image"
@@ -39,21 +62,14 @@ const Hero = () => {
 
       <div className="mt-10">
         <p className="text-4xl font-style-2 tracking-[0.2rem] text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
-          Freelance App & Web Developer
+          Freelance Blockchain and Frontend Developer
+        </p>
+        <p className="text-center mt-2 text-sm font-bold tracking-widest text-gray-300">
+          I build blockchain dapps, frontends and mobile apps ⚡️
         </p>
         <p className="text-center mt-2 text-2xl font-bold tracking-widest text-gray-300">
-          Based in Mumbai , India
+          Based in Mumbai , India 📍
         </p>
-        <p className="mt-2 text-center text-white font-bold tracking-widest">
-          Let's work together? {'>'}
-        </p>
-      </div>
-      <div className="mt-3">
-        <a href="#projects">
-          <p className="text-2xl underline cursor-pointer tracking-wide font-bold text-blue-100 text-center">
-            Wanna See My Work?
-          </p>
-        </a>
       </div>
     </div>
   )

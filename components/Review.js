@@ -6,26 +6,20 @@ import { businessData, testimonials, workDone } from '../data'
 import { UserCircleIcon } from '@heroicons/react/outline'
 
 const Review = () => {
-  const { ref, inView } = useInView({ threshold: 0 })
-
-  const animation = useAnimation()
+  const profileVarient = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0 },
+  }
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
-    const unsubscribe = console.log('Div activity status for inView : ', inView)
-
     if (inView) {
-      animation.start({
-        x: 0,
-        transition: { type: 'spring' },
-        opacity: 100,
-      })
+      control.start('visible')
+    } else {
+      control.start('hidden')
     }
-    if (!inView) {
-      animation.start({ x: 400 })
-    }
-
-    return unsubscribe
-  }, [inView])
+  }, [control, inView])
   return (
     <div
       id="testi"
@@ -35,15 +29,20 @@ const Review = () => {
         <p className="text-white font-style-2 tracking-wider  text-center xl:text-center font-bold text-5xl ">
           Client Testimonials 📝
         </p>
-        <div ref={ref}>
-          <div className="flex flex-col items-center mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
+        <div>
+          <div className="flex flex-col items-center lg:items-start mt-20 justify-center space-y-20 xl:space-y-0 xl:flex-row xl:space-x-14 text-white">
             {testimonials.map((data) => {
               return (
-                <motion.div className="relative cursor-pointer max-w-md transition-all duration-150 xl:hover:scale-105 max-h-max">
+                <motion.div
+                  variants={profileVarient}
+                  ref={ref}
+                  animate={control}
+                  className=" cursor-pointer max-w-md transition-all ease-in duration-150 hover:scale-110    max-h-max"
+                >
                   <div className="absolute -inset-0.5  bg-gradient-to-r from-yellow-300 to-yellow-800 rounded-2xl blur "></div>
                   <div
                     key={data.id}
-                    className="bg-[#1E1535] text-left relative space-y-4 max-w-sm    min-w-max p-4 rounded-lg"
+                    className="bg-[#1E1535] text-left relative space-y-4 max-w-sm min-w-max p-4 rounded-lg"
                   >
                     <div className="flex  items-center space-x-5 ">
                       <div>

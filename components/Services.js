@@ -7,26 +7,20 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 
 const Services = () => {
-  const { ref, inView } = useInView({ threshold: 0 })
-
-  const animation = useAnimation()
+  const profileVarient = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0 },
+  }
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
-    const unsubscribe = console.log('Div activity status for inView : ', inView)
-
     if (inView) {
-      animation.start({
-        x: 0,
-        transition: { type: 'tween', bounce: 0.3 },
-        opacity: 100,
-      })
+      control.start('visible')
+    } else {
+      control.start('hidden')
     }
-    if (!inView) {
-      animation.start({ x: '30vw', opacity: 0 })
-    }
-
-    return unsubscribe
-  }, [inView])
+  }, [control, inView])
 
   return (
     <div
@@ -62,13 +56,14 @@ const Services = () => {
         </div>
         {/* right div  */}
 
-        <div
-          ref={ref}
-          className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end"
-        >
+        <div className="mt-10 space-y-10 mb-10 flex flex-col items-center xl:items-end">
           {businessData.map((data) => {
             return (
               <motion.div
+                ref={ref}
+                variants={profileVarient}
+                animate={control}
+                initial="hidden"
                 key={data.id}
                 className="relative cursor-pointer transition-all duration-150 xl:hover:scale-105"
               >
