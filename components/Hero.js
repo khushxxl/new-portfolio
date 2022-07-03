@@ -4,6 +4,8 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Hero = () => {
   const profileVarient = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -23,9 +25,9 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="bg-gradient-to-b from-blue-300  to-blue-900  h-screen w-full flex flex-col items-center justify-start "
+      className="bg-[#03001E] h-screen w-full flex flex-col items-center justify-start "
     >
-      <div className=" mt-20   min-w-max">
+      <div className=" mt-10   min-w-max">
         {/* div 1  */}
         <div className="relative p-2">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 rounded-2xl blur "></div>
@@ -40,18 +42,19 @@ const Hero = () => {
         </div>
         {/* end div 1  */}
       </div>
-      <div className="relative pb-5 mt-6">
-        <div className="absolute -inset-0.5 bg-gradient-to-b  to-yellow-900 rounded-full blur "></div>
+      <div className="relative p-1 mt-10 mb-10 flex items-center">
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-300 flex items-center rounded-full blur "></div>
         <motion.div
           ref={ref}
           animate={control}
           initial="hidden"
           variants={profileVarient}
+          className="flex items-center"
         >
           <Image
             src="https://pbs.twimg.com/profile_images/1458835398319218703/oX3WAyP-_400x400.jpg"
             alt="Profile image"
-            className="rounded-full border-4 border-white relative"
+            className="rounded-full border-4 border-white relative cursor-pointer"
             // layout="fill"
             objectFit="cover"
             height={200}
@@ -60,8 +63,32 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="mt-10">
-        <p className="text-4xl font-style-2 tracking-[0.2rem] text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
+      <div className="mt-2">
+        <div className="flex justify-center items-center space-x-10 mb-2">
+          <Link passHref href={'https://www.linkedin.com/in/khushcodes/'}>
+            <a target="_blank">
+              <div className="rounded-full border-2 border-yellow-400 flex items-center">
+                <Image
+                  src={require('../images/linkedin.png')}
+                  height={40}
+                  width={40}
+                  className="cursor-pointer"
+                />
+              </div>
+            </a>
+          </Link>
+          <a href="mailto:khushaal.choithramani@gmail.com">
+            <div className="rounded-full border-2 border-yellow-400 flex items-center">
+              <Image
+                src={require('../images/gmail.png')}
+                height={40}
+                width={40}
+                className="cursor-pointer rounded-full"
+              />
+            </div>
+          </a>
+        </div>
+        <p className="text-4xl font-style-4 tracking-[0.2rem] mt-5 text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
           Freelance Blockchain and Frontend Developer
         </p>
         <p className="text-center mt-2 text-sm font-bold tracking-widest text-gray-300">

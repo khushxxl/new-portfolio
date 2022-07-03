@@ -9,6 +9,7 @@ module.exports = {
         'custom-font-1': ['"Roboto Mono"'],
         'style-2': ['"Truculenta"'],
         'style-3': ['"Montserrat"'],
+        'style-4': ['Arima'],
       },
     },
   },

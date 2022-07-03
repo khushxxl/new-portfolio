@@ -14,18 +14,27 @@ const Connect = () => {
       </div>
       <div className="flex flex-col lg:flex-row w-full items-center justify-center text-center lg:space-x-10 xl:space-x-20  mt-8 text-white font-semibold text-xl">
         <div className="hover:text-blue-400 cursor-pointer">
-          <a href="https://www.linkedin.com/in/khushaal-choithramani-250285208/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/khushaal-choithramani-250285208/"
+          >
             LinkedIn
           </a>
         </div>
         <div className="hover:text-blue-400 cursor-pointer">
-          <a href="https://twitter.com/khushaal_04">Twitter</a>
+          <a target="_blank" href="https://twitter.com/khushaal_04">
+            Twitter
+          </a>
         </div>
         <div className="hover:text-blue-400 cursor-pointer">
-          <a href="https://www.instagram.com/khush.codes/"> Instagram</a>
+          <a target="_blank" href="https://www.instagram.com/khush.codes/">
+            Instagram
+          </a>
         </div>
         <div className="hover:text-blue-400 cursor-pointer">
-          <a href="mailto:khushaal.choithramani@gmail.com">Email</a>
+          <a target="_blank" href="mailto:khushaal.choithramani@gmail.com">
+            Email
+          </a>
         </div>
       </div>
     </div>

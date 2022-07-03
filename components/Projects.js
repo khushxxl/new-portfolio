@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import { ExternalLinkIcon, HeartIcon } from '@heroicons/react/outline'
 
 const Projects = () => {
   const profileVarient = {
@@ -26,7 +27,7 @@ const Projects = () => {
       className="bg-[#03001E]  flex flex-col items-center justify-start "
     >
       <div>
-        <p className="text-white font-style-2   text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
+        <p className="text-white font-style-4   text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
           Awesome Projects ✨
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 w-full  gap-x-20 gap-y-10 items-center place-items-center ">
@@ -36,37 +37,44 @@ const Projects = () => {
                 // variants={profileVarient}
                 // ref={ref}
                 // animate={control}
-                className="relative cursor-pointer max-w-md transition-all xl:hover:scale-105 duration-150 rounded-2xl"
+                className="relative cursor-pointer items-start max-w-md transition-all xl:hover:scale-105 duration-150 text-white rounded-2xl"
               >
-                <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div>
-                <div className="bg-[#1E1535] relative text-white rounded-xl p-2 flex flex-col items-center justify-center">
-                  <p className="tracking-widest font-custom-font-1 font-semibold text-xl mb-3">
-                    {data.name}
-                  </p>
-                  <a href={data.deployedLink}>
+                {/* <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div> */}
+                <div className="  w-fit relative text-white rounded-xl  flex flex-col items-center justify-center">
+                  <a href={data.deployedLink} target="_blank">
                     <Image
                       src={data.image}
                       alt={`${data.name}'s image`}
-                      className=" rounded-xl cursor-pointer"
+                      className=" rounded-xl cursor-pointer border-2 border-yellow-300 "
                       height={250}
-                      width={370}
+                      width={350}
                     />
                   </a>
-                  <div className="flex w-full justify-evenly px-3 my-3  font-semibold">
-                    <a href={data.gitRepoLink}>
-                      <p>View Code</p>
+                </div>
+                <div className="space-y-2  ">
+                  <p className="tracking-widest font-custom-font-1 font-semibold text-xl ">
+                    {data.name}
+                  </p>
+
+                  <div>
+                    <p className="max-w-sm text-left">{data.description}</p>
+                  </div>
+
+                  <div className="flex p-1 border-2 border-yellow-300 rounded-full  justify-center items-center font-semibold space-x-5 bg-white w-fit ">
+                    <a href={data.gitRepoLink} target="_blank">
+                      <Image
+                        src={require('../images/github.png')}
+                        height={20}
+                        width={20}
+                        className="cursor-pointer"
+                      />
                     </a>
 
                     {data.deployedLink && (
-                      <a href={data.deployedLink}>
-                        <p>Visit</p>
+                      <a href={data.deployedLink} target="_blank">
+                        <ExternalLinkIcon className="hover:text-blue-300 -mt-1 text-black h-5 w-5 " />
                       </a>
                     )}
-                  </div>
-                  <div>
-                    <p className="max-w-sm text-center p-4">
-                      {data.description}
-                    </p>
                   </div>
                 </div>
               </motion.div>

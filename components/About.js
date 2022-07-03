@@ -30,7 +30,7 @@ const About = () => {
       id="about"
       className="bg-[#03001E]   flex flex-col items-center justify-start"
     >
-      <p className="text-white font-style-2  text-center xl:text-center tracking-wider font-bold text-5xl mt-24">
+      <p className="text-white font-style-4  text-center xl:text-center tracking-wider font-bold text-5xl mt-24">
         About Me 🙇‍♂️
       </p>
       <div className="mt-10 flex flex-col xl:flex-row justify-between max-w-6xl w-full items-center xl:items-start">

@@ -7,14 +7,14 @@ import {
 
 export const projectData = [
   {
-    name: 'KRYPT WEB 3.0',
+    name: 'Marvel NFT Minter',
     description:
-      'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
+      'A decentralised blockchain based NFT Minter to mint yourself NFTs',
     function: 'web3 , blockchain , transfer money , DeFi',
-    gitRepoLink: 'https://github.com/khushxxl/krypt-nextjs',
-    deployedLink: 'https://krypt-nextjs.vercel.app/',
-    id: 333,
-    image: require('./images/kryptPortfolio.png'),
+    gitRepoLink: 'https://github.com/khushxxl/marvel-nft-collection',
+    deployedLink: 'https://marvel-nft-collection.vercel.app/',
+    id: 33345,
+    image: require('./images/minter.png'),
   },
   {
     name: 'NFT MARKETPLACE WEB 3.0 ',
@@ -26,6 +26,17 @@ export const projectData = [
     id: 333,
     image: require('./images/nftMarketplace.png'),
   },
+  {
+    name: 'KRYPT WEB 3.0',
+    description:
+      'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
+    function: 'web3 , blockchain , transfer money , DeFi',
+    gitRepoLink: 'https://github.com/khushxxl/krypt-nextjs',
+    deployedLink: 'https://krypt-nextjs.vercel.app/',
+    id: 333,
+    image: require('./images/kryptPortfolio.png'),
+  },
+
   {
     name: 'AMAZON WEB 3.0',
     description:
@@ -59,16 +70,16 @@ export const projectData = [
     deployedLink: 'https://github.com/khushxxl/rn-ecom-app',
   },
 
-  {
-    id: '3',
-    name: 'Quote Up',
-    description:
-      'This mobile application shows beautiful new quotes to influence and enrich people in right direction! (iOS & Android)',
-    tech: 'React , React Native , API integration , Light & Dark mode support ',
-    image: require('./images/quotePortfolio.png'),
-    gitRepoLink: 'https://github.com/khushxxl/quote-up',
-    deployedLink: 'https://github.com/khushxxl/quote-up',
-  },
+  // {
+  //   id: '3',
+  //   name: 'Quote Up',
+  //   description:
+  //     'This mobile application shows beautiful new quotes to influence and enrich people in right direction! (iOS & Android)',
+  //   tech: 'React , React Native , API integration , Light & Dark mode support ',
+  //   image: require('./images/quotePortfolio.png'),
+  //   gitRepoLink: 'https://github.com/khushxxl/quote-up',
+  //   deployedLink: 'https://github.com/khushxxl/quote-up',
+  // },
 ]
 
 export const businessData = [
@@ -186,7 +197,7 @@ export const myApps = [
 
 export const myWebsites = [
   {
-    title: 'Full Stacl WEB 3.0 dApp - KRYPT',
+    title: 'Full Stack WEB 3.0 dApp - KRYPT',
     subtitle:
       'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
     function: 'web3 , blockchain , transfer money , DeFi',

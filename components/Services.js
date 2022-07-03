@@ -28,7 +28,7 @@ const Services = () => {
       className=" bg-[#03001E] flex flex-col justify-start items-center "
     >
       <div>
-        <p className="text-white text-center xl:text-left tracking-wide font-bold text-5xl mt-12 font-style-2">
+        <p className="text-white text-center xl:text-left tracking-wide font-bold text-5xl mt-12 font-style-4">
           Let's Build Something Awesome 🚀
         </p>
       </div>
@@ -37,10 +37,10 @@ const Services = () => {
         {/* left div  */}
         <div className="mt-10 flex flex-col items-center xl:items-start justify-start  ">
           <div>
-            <p className="font-semibold tracking-widest text-center xl:text-left text-2xl text-gray-500">
+            <p className="font-semibold tracking-widest text-center xl:text-left text-2xl text-gray-400">
               My Services
             </p>
-            <p className="text-5xl text-center xl:text-left max-w-lg mt-3 font-extrabold">
+            <p className="text-5xl font-style-4 text-center xl:text-left max-w-lg mt-3 font-extrabold">
               The most creative intuitive workmate
             </p>
           </div>

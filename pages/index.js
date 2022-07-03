@@ -31,6 +31,11 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
           rel="stylesheet"
         ></link>
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap"
+          rel="stylesheet"
+        ></link>
         <meta
           name="keywords"
           content=" KHUSHAAL CHOITHRAMANI , KHUSHAAL , CHOITHRAMANI ,  HTML , CSS , JAVASCRIPT , FIREBASE , REACTJS , NEXTJS ,TAILWIND CSS , React-Native , FREELANCER , HIRE , APPS , WEBSITES , WEB-APPS , MOBILE APPLICATIONS , ANDROID , IOS , WEB "

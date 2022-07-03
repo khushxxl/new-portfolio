@@ -24,7 +24,7 @@ const Testimonials = () => {
       className="bg-[#03001E] flex flex-col items-center justify-center "
     >
       <div className="shadow-xl">
-        <p className="text-white font-style-2 tracking-wider  text-center xl:text-center font-bold text-5xl mt-12">
+        <p className="text-white font-style-4 tracking-wider  text-center xl:text-center font-bold text-5xl mt-12">
           Work Experience 💻
         </p>
         <div ref={ref}>
@@ -44,7 +44,7 @@ const Testimonials = () => {
                     className="bg-[#1E1535] text-left relative space-y-4 max-w-sm    min-w-max p-4 rounded-lg"
                   >
                     <div className="flex items-start flex-col ">
-                      <p className="text-xl font-custom-font-1  font-semibold tracking-wide text-left">
+                      <p className="text-xl font-style-4  font-semibold tracking-wide text-left">
                         {data.name}
                       </p>
                       <p className="text-gray-300">My Role: {data.role}</p>
