@@ -24,40 +24,34 @@ const Projects = () => {
   return (
     <motion.div
       id="projects"
-      className="bg-[#03001E]  flex flex-col items-center justify-start "
+      className="bg-[#03001E]  flex flex-col items-center justify-center "
     >
       <div>
-        <p className="text-white font-style-4   text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
+        <p className="text-white font-style-4 text-center xl:text-center tracking-wider flex flex-col items-center justify-center font-bold text-5xl mt-24">
           Awesome Projects ✨
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 w-full  gap-x-20 gap-y-10 items-center place-items-center ">
           {projectData.map((data) => {
             return (
-              <motion.div
-                // variants={profileVarient}
-                // ref={ref}
-                // animate={control}
-                className="relative cursor-pointer items-start max-w-md transition-all xl:hover:scale-105 duration-150 text-white rounded-2xl"
-              >
-                {/* <div className="absolute -inset-0.5  bg-gradient-to-b from-red-200 to-red-800 rounded-2xl blur "></div> */}
-                <div className="  w-fit relative text-white rounded-xl  flex flex-col items-center justify-center">
+              <motion.div className="relative cursor-pointer justify-center items-center max-w-md transition-all xl:hover:scale-105 duration-150 text-white rounded-2xl">
+                <div className=" relative text-white rounded-xl  flex flex-col items-center lg:items-start justify-center">
                   <a href={data.deployedLink} target="_blank">
                     <Image
                       src={data.image}
                       alt={`${data.name}'s image`}
-                      className=" rounded-xl cursor-pointer border-2 border-yellow-300 "
+                      className=" rounded-xl cursor-pointer border-2 border-yellow-300 flex items-center justify-center "
                       height={250}
                       width={350}
                     />
                   </a>
                 </div>
-                <div className="space-y-2  ">
+                <div className="space-y-2 text-center lg:text-left flex items-center justify-center flex-col lg:items-start  ">
                   <p className="tracking-widest font-custom-font-1 font-semibold text-xl ">
                     {data.name}
                   </p>
 
                   <div>
-                    <p className="max-w-sm text-left">{data.description}</p>
+                    <p className="max-w-sm">{data.description}</p>
                   </div>
 
                   <div className="flex p-1 border-2 border-yellow-300 rounded-full  justify-center items-center font-semibold space-x-5 bg-white w-fit ">
