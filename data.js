@@ -67,7 +67,16 @@ export const projectData = [
     tech: 'This web app has been built with Next.js and Tailwind CSS',
     image: require('./images/ecomPortfolio.png'),
     gitRepoLink: 'https://github.com/khushxxl/rn-ecom-app',
-    deployedLink: 'https://github.com/khushxxl/rn-ecom-app',
+  },
+
+  {
+    id: 4989,
+    name: 'Spotify-Clone',
+    description:
+      'A mobile app which allows users to play and pause songs (under development) ',
+    tech: 'This web app has been built with Next.js and Tailwind CSS',
+    image: require('./images/spotify-clone.png'),
+    gitRepoLink: 'https://github.com/khushxxl/spotify-clone-reactNative',
   },
 
   // {
