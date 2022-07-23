@@ -159,7 +159,7 @@ export const workDone = [
 export const about = [
   {
     title: 'Education',
-    desc: 'I am in my high school and I like to study about space',
+    desc: 'Studying about space and computers excites me alot',
   },
   {
     title: 'Profession',
