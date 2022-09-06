@@ -89,10 +89,10 @@ const Hero = () => {
           </a>
         </div>
         <p className="text-4xl font-style-4 tracking-[0.2rem] mt-5 text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
-          Freelance Blockchain and Frontend Developer
+          Freelance Website & App Developer
         </p>
         <p className="text-center mt-2 text-sm font-bold tracking-widest text-gray-300">
-          I build blockchain dapps, frontends and mobile apps ⚡️
+          I code Reactjs and React Native Apps
         </p>
         <p className="text-center mt-2 text-2xl font-bold tracking-widest text-gray-300">
           Based in Mumbai , India 📍

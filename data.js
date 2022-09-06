@@ -6,16 +6,16 @@ import {
 } from '@heroicons/react/outline'
 
 export const projectData = [
-  {
-    name: 'Marvel NFT Minter',
-    description:
-      'A decentralised blockchain based NFT Minter to mint yourself NFTs',
-    function: 'web3 , blockchain , transfer money , DeFi',
-    gitRepoLink: 'https://github.com/khushxxl/marvel-nft-collection',
-    deployedLink: 'https://marvel-nft-collection.vercel.app/',
-    id: 33345,
-    image: require('./images/minter.png'),
-  },
+  // {
+  //   name: 'Marvel NFT Minter',
+  //   description:
+  //     'A decentralised blockchain based NFT Minter to mint yourself NFTs',
+  //   function: 'web3 , blockchain , transfer money , DeFi',
+  //   gitRepoLink: 'https://github.com/khushxxl/marvel-nft-collection',
+  //   deployedLink: 'https://marvel-nft-collection.vercel.app/',
+  //   id: 33345,
+  //   image: require('./images/minter.png'),
+  // },
   {
     name: 'NFT MARKETPLACE WEB 3.0 ',
     description:
@@ -26,16 +26,16 @@ export const projectData = [
     id: 333,
     image: require('./images/nftMarketplace.png'),
   },
-  {
-    name: 'KRYPT WEB 3.0',
-    description:
-      'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
-    function: 'web3 , blockchain , transfer money , DeFi',
-    gitRepoLink: 'https://github.com/khushxxl/krypt-nextjs',
-    deployedLink: 'https://krypt-nextjs.vercel.app/',
-    id: 333,
-    image: require('./images/kryptPortfolio.png'),
-  },
+  // {
+  //   name: 'KRYPT WEB 3.0',
+  //   description:
+  //     'A decentralised blockchain based app to transfer ethereum from one account to another through metamask wallet',
+  //   function: 'web3 , blockchain , transfer money , DeFi',
+  //   gitRepoLink: 'https://github.com/khushxxl/krypt-nextjs',
+  //   deployedLink: 'https://krypt-nextjs.vercel.app/',
+  //   id: 333,
+  //   image: require('./images/kryptPortfolio.png'),
+  // },
 
   {
     name: 'AMAZON WEB 3.0',
@@ -60,6 +60,17 @@ export const projectData = [
   },
 
   {
+    id: 222,
+    name: 'Airbnb Frontend Clone',
+    description: 'Frontend clone of Airbnb web app ',
+    tech:
+      'Nextjs , Reactjs , Recoiljs , Firebase Auth , Firebase Firestore , Tailwind CSS ',
+    image: require('./images/airbnb.png'),
+    gitRepoLink: 'https://github.com/khushxxl/airbnb-nextjs-project',
+    deployedLink: 'https://airbnb-nextjs-project-b176umlj0-khushxxl.vercel.app',
+  },
+
+  {
     id: 4,
     name: 'Shopping App (Full Stack)',
     description:
@@ -71,7 +82,7 @@ export const projectData = [
 
   {
     id: 4989,
-    name: 'Spotify-Clone',
+    name: 'Spotify-Clone Mobile App',
     description:
       'A mobile app which allows users to play and pause songs (under development) ',
     tech: 'This web app has been built with Next.js and Tailwind CSS',
@@ -94,23 +105,23 @@ export const projectData = [
 export const businessData = [
   {
     id: 1,
-    title: 'NFT Development',
+    title: 'Web Development',
     icon: <DesktopComputerIcon className="h-5 w-5" />,
     desc:
-      'I can build & deploy NFTs and NFT marketplaces. Host on opensea or make a seperate marketplace',
+      'I can build the most beautiful and useful website for your business!',
   },
   {
     id: 2,
-    title: 'Blockchain Development',
+    title: 'App Development',
     icon: <DeviceMobileIcon className="h-5 w-5" />,
-    desc: 'I can build web 3.0 dapps and deploy it on ethereum network.',
+    desc: 'Need an app ? , Problem solved , get your apps built in no time!',
   },
   {
     id: 3,
-    title: 'Web & App Development',
+    title: 'Web & App Design',
     icon: <PencilAltIcon className="h-5 w-5" />,
     desc:
-      'I can build websites and apps for you and host on the internet in no time! I can help in ranking websites on top too!',
+      'Struggling with the design? Let me design an architecture for your websites and apps!',
   },
   //   {
   //     id: 4,
