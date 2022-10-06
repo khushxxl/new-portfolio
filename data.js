@@ -61,13 +61,14 @@ export const projectData = [
 
   {
     id: 222,
-    name: 'Airbnb Frontend Clone',
-    description: 'Frontend clone of Airbnb web app ',
+    name: 'Netflix Frontend Clone with Authentication',
+    description:
+      'Frontend clone of Netflix with full authentication system using redux. ',
     tech:
       'Nextjs , Reactjs , Recoiljs , Firebase Auth , Firebase Firestore , Tailwind CSS ',
-    image: require('./images/airbnb.png'),
-    gitRepoLink: 'https://github.com/khushxxl/airbnb-nextjs-project',
-    deployedLink: 'https://airbnb-nextjs-project-b176umlj0-khushxxl.vercel.app',
+    image: require('./images/netflix-clone.png'),
+    gitRepoLink: 'https://github.com/khushxxl/netflix-clone',
+    deployedLink: 'https://netflix-clone-khushxxl.vercel.app/',
   },
 
   {
@@ -89,17 +90,6 @@ export const projectData = [
     image: require('./images/spotify-clone.png'),
     gitRepoLink: 'https://github.com/khushxxl/spotify-clone-reactNative',
   },
-
-  // {
-  //   id: '3',
-  //   name: 'Quote Up',
-  //   description:
-  //     'This mobile application shows beautiful new quotes to influence and enrich people in right direction! (iOS & Android)',
-  //   tech: 'React , React Native , API integration , Light & Dark mode support ',
-  //   image: require('./images/quotePortfolio.png'),
-  //   gitRepoLink: 'https://github.com/khushxxl/quote-up',
-  //   deployedLink: 'https://github.com/khushxxl/quote-up',
-  // },
 ]
 
 export const businessData = [
