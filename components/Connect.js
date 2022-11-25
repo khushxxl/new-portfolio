@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Connect = () => {
   return (
     <div
@@ -18,22 +20,38 @@ const Connect = () => {
             target="_blank"
             href="https://www.linkedin.com/in/khushaal-choithramani-250285208/"
           >
-            LinkedIn
+            <Image
+              src={require('../images/Llogo.png')}
+              height={100}
+              width={100}
+            />
           </a>
         </div>
         <div className="hover:text-blue-400 cursor-pointer">
           <a target="_blank" href="https://twitter.com/khushaal_04">
-            Twitter
+            <Image
+              src={require('../images/twitter.png')}
+              height={100}
+              width={100}
+            />
           </a>
         </div>
         <div className="hover:text-blue-400 cursor-pointer">
-          <a target="_blank" href="https://www.instagram.com/khush.codes/">
-            Instagram
+          <a target="_blank" href="https://github.com/khushxxl">
+            <Image
+              src={require('../images/github.png')}
+              height={100}
+              width={100}
+            />
           </a>
         </div>
         <div className="hover:text-blue-400 cursor-pointer">
           <a target="_blank" href="mailto:khushaal.choithramani@gmail.com">
-            Email
+            <Image
+              src={require('../images/gmail.png')}
+              height={100}
+              width={100}
+            />
           </a>
         </div>
       </div>

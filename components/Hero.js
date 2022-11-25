@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="bg-[#03001E] h-screen w-full flex flex-col items-center justify-start "
+      className=" bg-gradient h-screen w-full flex flex-col items-center justify-start "
     >
       <div className=" mt-10   min-w-max">
         {/* div 1  */}
@@ -89,13 +89,13 @@ const Hero = () => {
           </a>
         </div>
         <p className="text-4xl font-style-4 tracking-[0.2rem] mt-5 text-transparent bg-clip-text bg-gradient-to-br from-white  to-blue-200 font-extrabold text-center">
-          Freelance Website & App Developer
+          Web & App Developer
         </p>
         <p className="text-center mt-2 text-sm font-bold tracking-widest text-gray-300">
-          I code Reactjs and React Native Apps
+          I code ReactJS , NextJS and React Native Apps
         </p>
         <p className="text-center mt-2 text-2xl font-bold tracking-widest text-gray-300">
-          Based in Mumbai , India 📍
+          Based in Dundee , United Kingdom 📍
         </p>
       </div>
     </div>

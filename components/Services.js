@@ -11,6 +11,10 @@ const Services = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
     hidden: { opacity: 0, scale: 0 },
   }
+  const imageVarient = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0 },
+  }
   const control = useAnimation()
   const [ref, inView] = useInView()
 
@@ -44,7 +48,12 @@ const Services = () => {
               The most creative intuitive workmate
             </p>
           </div>
-          <div>
+          <motion.div
+            ref={ref}
+            variants={profileVarient}
+            animate={control}
+            initial="hidden"
+          >
             <Image
               src="https://i.ibb.co/tbWf57K/img1.png"
               className="shadow-2xl "
@@ -52,7 +61,7 @@ const Services = () => {
               width={300}
               objectFit="cover"
             />
-          </div>
+          </motion.div>
         </div>
         {/* right div  */}
 
