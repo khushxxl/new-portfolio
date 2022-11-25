@@ -90,6 +90,15 @@ export const projectData = [
     image: require('./images/spotify-clone.png'),
     gitRepoLink: 'https://github.com/khushxxl/spotify-clone-reactNative',
   },
+  {
+    id: 493333,
+    name: 'Netflix-Clone Mobile App',
+    description:
+      'Netflix mobile app clone, which lets you stream movies and web shows(dummy now) ',
+    tech: 'This web app has been built with Next.js and Tailwind CSS',
+    image: require('./images/netflix-mob.png'),
+    gitRepoLink: 'https://github.com/khushxxl/netflix-mobile-app-rn',
+  },
 ]
 
 export const businessData = [
