@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Review from '../components/Review'
 import Services from '../components/Services'
+import Tech from '../components/Tech'
 import Testimonials from '../components/Testimonials'
 
 export default function Home() {

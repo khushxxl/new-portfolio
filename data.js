@@ -82,6 +82,16 @@ export const projectData = [
   },
 
   {
+    id: 493323,
+    name: 'Uber Eats Mobile App',
+    description:
+      'Full Stack Uber Eats Clone with backend, frontend and authentication CRUD',
+    tech: 'This web app has been built with Next.js and Tailwind CSS',
+    image: require('./images/ubereats.png'),
+    gitRepoLink: 'https://github.com/khushxxl/uber-eats-clone',
+  },
+
+  {
     id: 4989,
     name: 'Spotify-Clone Mobile App',
     description:
