@@ -23,7 +23,7 @@ const Review = () => {
   return (
     <div
       id="testi"
-      className="bg-[#03001E] flex flex-col items-center justify-center "
+      className="bg-[#03001E] flex flex-col items-center justify-center"
     >
       <div className="shadow-xl mt-20">
         <p className="text-white font-style-4 tracking-wider  text-center xl:text-center font-bold text-5xl ">

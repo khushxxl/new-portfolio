@@ -9,6 +9,7 @@ import Review from '../components/Review'
 import Services from '../components/Services'
 import Tech from '../components/Tech'
 import Testimonials from '../components/Testimonials'
+import LatestWork from '../components/LatestWork'
 
 export default function Home() {
   return (
@@ -53,7 +54,9 @@ export default function Home() {
       <main className="">
         <Navbar />
         <Hero />
+        <LatestWork />
         <Services />
+
         <Testimonials />
         <Review />
         <Projects />
