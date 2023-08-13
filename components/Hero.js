@@ -52,7 +52,7 @@ const Hero = () => {
           className="flex items-center"
         >
           <Image
-            src="https://pbs.twimg.com/profile_images/1458835398319218703/oX3WAyP-_400x400.jpg"
+            src="https://media.licdn.com/dms/image/C4E03AQEAr8Sp8RZ88w/profile-displayphoto-shrink_400_400/0/1647588158838?e=1697673600&v=beta&t=QzaK3TEffZHUg0mAWhsU71RmVGoumU7YOnT4P0eHlrY"
             alt="Profile image"
             className="rounded-full border-4 border-white relative cursor-pointer"
             // layout="fill"
