@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import About from '../components/About'
-import Connect from '../components/Connect'
-import End from '../components/End'
-import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
-import Projects from '../components/Projects'
-import Review from '../components/Review'
-import Services from '../components/Services'
-import Tech from '../components/Tech'
-import Testimonials from '../components/Testimonials'
-import LatestWork from '../components/LatestWork'
+import Head from "next/head";
+import About from "../components/About";
+import Connect from "../components/Connect";
+import End from "../components/End";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import Projects from "../components/Projects";
+import Review from "../components/Review";
+import Services from "../components/Services";
+import Tech from "../components/Tech";
+import Testimonials from "../components/Testimonials";
+import LatestWork from "../components/LatestWork";
 
 export default function Home() {
   return (
@@ -55,15 +55,15 @@ export default function Home() {
         <Navbar />
         <Hero />
         <LatestWork />
+        <Projects />
         <Services />
-
         <Testimonials />
         <Review />
-        <Projects />
+
         <About />
         <Connect />
         <End />
       </main>
     </div>
-  )
+  );
 }

@@ -1,26 +1,26 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { useInView } from 'react-intersection-observer'
-import { useEffect, useState } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import Image from "next/image";
+import Link from "next/link";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Hero = () => {
   const profileVarient = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
-  }
-  const control = useAnimation()
-  const [ref, inView] = useInView()
+  };
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
-      control.start('visible')
+      control.start("visible");
     } else {
-      control.start('hidden')
+      control.start("hidden");
     }
-  }, [control, inView])
+  }, [control, inView]);
 
   return (
     <div
@@ -52,7 +52,7 @@ const Hero = () => {
           className="flex items-center"
         >
           <Image
-            src="https://media.licdn.com/dms/image/C4E03AQEAr8Sp8RZ88w/profile-displayphoto-shrink_400_400/0/1647588158838?e=1697673600&v=beta&t=QzaK3TEffZHUg0mAWhsU71RmVGoumU7YOnT4P0eHlrY"
+            src="https://i.ibb.co/b5TnCfn/IMG-4160.png"
             alt="Profile image"
             className="rounded-full border-4 border-white relative cursor-pointer"
             // layout="fill"
@@ -65,11 +65,11 @@ const Hero = () => {
 
       <div className="mt-2">
         <div className="flex justify-center items-center space-x-10 mb-2">
-          <Link passHref href={'https://www.linkedin.com/in/khushcodes/'}>
+          <Link passHref href={"https://www.linkedin.com/in/khushcodes/"}>
             <a target="_blank">
               <div className="rounded-full border-2 border-yellow-400 flex items-center">
                 <Image
-                  src={require('../images/linkedin.png')}
+                  src={require("../images/linkedin.png")}
                   height={40}
                   width={40}
                   className="cursor-pointer"
@@ -80,7 +80,7 @@ const Hero = () => {
           <a href="mailto:khushaal.choithramani@gmail.com">
             <div className="rounded-full border-2 border-yellow-400 flex items-center">
               <Image
-                src={require('../images/gmail.png')}
+                src={require("../images/gmail.png")}
                 height={40}
                 width={40}
                 className="cursor-pointer rounded-full"
@@ -99,7 +99,7 @@ const Hero = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,26 +1,26 @@
-import { projectData } from '../data'
-import Image from 'next/image'
-import Link from 'next/link'
-import { motion, useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
-import { ExternalLinkIcon, HeartIcon } from '@heroicons/react/outline'
+import { projectData } from "../data";
+import Image from "next/image";
+import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { ExternalLinkIcon, HeartIcon } from "@heroicons/react/outline";
 
 const Projects = () => {
   const profileVarient = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
     hidden: { opacity: 0, scale: 0 },
-  }
-  const control = useAnimation()
-  const [ref, inView] = useInView()
+  };
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
-      control.start('visible')
+      control.start("visible");
     } else {
-      control.start('hidden')
+      control.start("hidden");
     }
-  }, [control, inView])
+  }, [control, inView]);
   return (
     <motion.div
       id="projects"
@@ -57,7 +57,7 @@ const Projects = () => {
                   <div className="flex p-1 border-2 border-yellow-300 rounded-full  justify-center items-center font-semibold space-x-5 bg-white w-fit ">
                     <a href={data.gitRepoLink} target="_blank">
                       <Image
-                        src={require('../images/github.png')}
+                        src={require("../images/github.png")}
                         height={20}
                         width={20}
                         className="cursor-pointer"
@@ -72,7 +72,7 @@ const Projects = () => {
                   </div>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
         <div className="mt-10">
@@ -84,7 +84,7 @@ const Projects = () => {
         </div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

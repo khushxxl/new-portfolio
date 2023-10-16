@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const LatestWork = () => {
   return (
@@ -23,7 +23,7 @@ const LatestWork = () => {
             Available on Playstore & App Store
           </p>
           <div className=" bg-blue-400 mx-10 md:mx-0 align-middle md:w-fit p-2 mt-5 rounded-lg justify-center items-center">
-            <Link href={'https://apps.apple.com/gb/app/viia/id6447322346'}>
+            <Link href={"https://apps.apple.com/gb/app/viia/id6447322346"}>
               <p className="text-black font-semibold cursor-pointer tracking-widest text-center xl:text-left text-2xl ">
                 Install Now
               </p>
@@ -32,9 +32,9 @@ const LatestWork = () => {
         </div>
 
         <div className="flex items-center justify-center">
-          <Link href={'https://apps.apple.com/gb/app/viia/id6447322346'}>
+          <Link href={"https://apps.apple.com/gb/app/viia/id6447322346"}>
             <Image
-              src={require('../images/viia.png')}
+              src={require("../images/viia.png")}
               height={500}
               width={500}
               objectFit="cover"
@@ -44,7 +44,7 @@ const LatestWork = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LatestWork
+export default LatestWork;
